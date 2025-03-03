@@ -1,0 +1,15 @@
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.AssemblyInfoInputs.cache
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.AssemblyInfo.cs
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.csproj.CoreCompileInputs.cache
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.sourcelink.json
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\bin\Debug\net9.0\aulas_csharp.exe
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\bin\Debug\net9.0\aulas_csharp.deps.json
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\bin\Debug\net9.0\aulas_csharp.runtimeconfig.json
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\bin\Debug\net9.0\aulas_csharp.dll
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\bin\Debug\net9.0\aulas_csharp.pdb
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.dll
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\refint\aulas_csharp.dll
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.pdb
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\aulas_csharp.genruntimeconfig.cache
+C:\Users\dougl\OneDrive\Área de Trabalho\aprendizado\aulas_csharp\obj\Debug\net9.0\ref\aulas_csharp.dll

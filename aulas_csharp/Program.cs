@@ -1,6 +1,7 @@
-﻿class Program
+﻿namespace aulas_csharp;
+public class Program
 {
-  public static void{
-    Console.Writeline('Hello World!');
+  public static void Main(){
+    Console.WriteLine("Hello World!!");
   }
 }
