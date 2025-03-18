@@ -1,4 +1,4 @@
-﻿namespace aulas_csharp;
+﻿namespace  aulas_csharp;
 public class Program
 {
   public static void Main(){
