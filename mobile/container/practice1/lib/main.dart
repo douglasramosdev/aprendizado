@@ -36,9 +36,9 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
                 child: Scaffold(
-                  body: CarouselView(
+                  body: CarouselView.weighted(
                     scrollDirection: Axis.horizontal,
-                    itemExtent: double.infinity,
+                    flexWeights: [2, 7, 2],
                     children: List<Widget>.generate(6, (int index) {
                       return Container(
                         margin: const EdgeInsets.all(8.0),
