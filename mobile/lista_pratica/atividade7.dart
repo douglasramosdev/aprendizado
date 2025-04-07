@@ -8,7 +8,6 @@
 //os alunos não podem ter o mesmo nome
 
 import 'dart:io';
-import 'dart:math';
 
 void main() {
   Map<String, double> alunosNotas = {};
