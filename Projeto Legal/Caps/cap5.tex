@@ -1,0 +1,91 @@
+\chapter{Metodologia}
+
+\section{Planejamento}
+\begin{enumerate}
+    \item Na etapa de planejamento, foi realizado o levantamento e análise dos requisitos
+    funcionais e não funcionais da plataforma, incluindo funcionalidades essenciais como
+    o cadastro de dispositivos, a visualização de smartphones disponíveis para troca e o
+    processo de troca em si. A análise das necessidades dos usuários e a definição de
+    um design intuitivo e responsivo serão baseadas em princípios de experiência do
+    usuário (UX/UI Design).
+
+    \item Além disso, as metodologia Ágeis : Scrum e Kanban foram adotadas para facilitar o
+    desenvolvimento incremental e iterativo da plataforma: 
+        \begin{citacao}
+            O Scrum é um framework ágil, normalmente utilizado no desenvolvimento de projetos complexos.
+
+A base desse método são os ciclos chamados sprints, que geralmente têm uma duração de duas a quatro semanas.
+
+Durante um sprint, uma equipe multifuncional trabalha em várias etapas sem interrupções.
+
+As principais funções no Scrum são o Product Owner, que representa os interesses dos stakeholders, a equipe de desenvolvimento, responsável por executar as tarefas, e o Scrum Master, que facilita o processo e resolve possíveis contratempos.
+
+O “pontapé inicial” é sempre a criação do Product Backlog, uma lista de funcionalidades definidas pelo Product Owner, acordadas com o cliente.
+
+A etapa seguinte é o Sprint Planning, em que a equipe seleciona as tarefas que serão realizadas durante o sprint.
+
+As rotinas são organizadas na Daily Scrum, reunião diária rápida para sincronizar as atividades da equipe.
+
+Ao final de cada sprint, ocorre a Sprint Review, uma demonstração do trabalho realizado, e a Sprint Retrospective, uma reflexão sobre o processo, visando melhorias contínuas.
+
+O ciclo então recomeça com a criação de um novo sprint.
+        \end{citacao}
+        \citeonline{Fia_2024}
+        \\
+        \begin{citacao}
+            O termo “Kanban” é de origem japonesa e significa “sinalização” ou “cartão”, e propõe o uso de cartões (post-its) para indicar e acompanhar o andamento da produção dentro da indústria.
+
+    Trata-se de um sistema visual que busca gerenciar o trabalho conforme ele se move pelo processo.
+
+    A metodologia visualiza o fluxo previsto, com todas as etapas envolvidas e o trabalho real, e seu objetivo é identificar os possíveis gargalos, fazendo correções para que haja fluidez nas atividades da empresa.
+
+    Existem essas três colunas básicas (“a fazer”, “fazendo” e “feito”), porém a metodologia Kanban pode ser organizada conforme sua necessidade.
+
+    \textbf{To Do:} tarefas a serem feitas
+Costuma ser uma das primeiras colunas à esquerda e contém os cartões das tarefas que devem ser feitas na sequência. Essa divisão costuma ser chamada de Backlog, e precisa ser gerenciada de maneira estratégica de acordo com a metodologia de trabalho.
+
+Ou seja, assim que uma tarefa sair da coluna seguinte (Doing), o primeiro cartão na coluna To Do é movido para seu lugar.
+
+    \textbf{Doing:} tarefas sendo executadas
+Nesta coluna, estão os cartões que o time ou colaborador está se dedicando no momento. Por ser um processo de entrega contínua, assim que um cartão sai, outro entra.
+
+    \textbf{Done:} tarefas concluídas
+Se o cartão está nessa coluna, pode respirar mais aliviado: a tarefa foi concluída! O objetivo é arrastar todos os cartões para cá com máxima agilidade.
+        \end{citacao}  
+        \citeonline{equipetotvs}
+
+\end{enumerate}
+
+\section{Documentação}
+\subsection{Documentação UML}
+    \begin{enumerate}
+
+    \item Diagrama de Casos de Uso: Para ilustrar as interações entre os usuários e o
+sistema, destacando as principais funcionalidades da plataforma.
+    
+    \item Diagrama de Classes: Para representar as classes e seus relacionamentos no
+sistema, especialmente no backend, com foco nas entidades principais (usuário,
+smartphones e transações).
+
+    \item Diagrama de Sequência: Para descrever a interação entre o sistema e o usuário
+durante a execução de determinadas ações, como o processo de troca de
+smartphones.
+    
+    \item Diagrama de Componentes: Para exibir como os componentes da aplicação
+(frontend, backend e banco de dados) interagem entre si.
+    
+    \end{enumerate}
+
+\section{Desenvolvimento}
+As tecnologias que foram utilizadas neste trabalho incluem:
+\begin{enumerate}
+    \item Backend: Node.JS com Framework Express, que fornecerá a estrutura para a criação de
+    APIs RESTful, facilitando a comunicação entre o frontend e o Banco de dados MySQL, que será utilizado pra 
+    armazenar os dados de todo o sistema web.
+    \item Frontend: React.js, um Framework JavaScript popular para a construção de
+    interfaces de usuário dinâmicas e responsivas, garantindo uma experiência fluida e
+    interativa para os usuários, englobando o HTML5, CSS3 e o JavaScript em todo o nosso desenvolvimento.
+\end{enumerate}
+
+
+\label{chap:Metodologia}
