@@ -493,8 +493,8 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
         ],
         currentIndex: _currentIndex,
         onTap: (index) {
-          _tabController.animateTo(_currentIndex);
           setState(() {
+            _tabController.animateTo(_currentIndex);
             _currentIndex = index;
           });
         },
@@ -518,28 +518,19 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         middle: const Text('Ita Help - Home'),
-        trailing: loggedUser != null
-            ? CupertinoButton(
-                padding: EdgeInsets.zero,
-                child: const Icon(CupertinoIcons.square_arrow_right),
-                onPressed: logout,
-              )
-            : null,
       ),
       child: SafeArea(
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
-            int crossAxisCount = 2;
-            if (constraints.maxWidth > 600) {
-              crossAxisCount = 4;
-            }
+            int crossAxisCount = constraints.maxWidth > 600 ? 4 : 2;
             return GridView.builder(
               padding: const EdgeInsets.all(10),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: crossAxisCount,
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 10,
-                  childAspectRatio: 0.7),
+                crossAxisCount: crossAxisCount,
+                mainAxisSpacing: 10,
+                crossAxisSpacing: 10,
+                childAspectRatio: 0.7,
+              ),
               itemCount: products.length,
               itemBuilder: (context, i) {
                 final p = products[i];
@@ -556,18 +547,6 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         middle: const Text('Login / Cadastro'),
-        leading: _currentIndex != 0
-            ? CupertinoButton(
-                padding: EdgeInsets.zero,
-                child: const Icon(CupertinoIcons.back),
-                onPressed: () {
-                  _tabController.animateTo(0);
-                  setState(() {
-                    _currentIndex = 0;
-                  });
-                },
-              )
-            : null,
       ),
       child: SafeArea(
         child: Center(
@@ -578,27 +557,26 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  if (loggedUser == null)
-                    CupertinoSlidingSegmentedControl<bool>(
-                      groupValue: showLogin,
-                      children: const {
-                        true: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 20),
-                          child: Text('Login'),
-                        ),
-                        false: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 20),
-                          child: Text('Cadastro'),
-                        ),
-                      },
-                      onValueChanged: (bool? value) {
-                        setState(() {
-                          showLogin = value ?? true;
-                        });
-                      },
-                    ),
+                  CupertinoSlidingSegmentedControl<bool>(
+                    groupValue: showLogin,
+                    children: const {
+                      true: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Text('Login'),
+                      ),
+                      false: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Text('Cadastro'),
+                      ),
+                    },
+                    onValueChanged: (bool? value) {
+                      setState(() {
+                        showLogin = value ?? true;
+                      });
+                    },
+                  ),
                   const SizedBox(height: 20),
-                  if (loggedUser == null && showLogin)
+                  if (showLogin)
                     Column(
                       children: [
                         CupertinoTextField(
@@ -629,8 +607,8 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
                           onPressed: login,
                         ),
                       ],
-                    ),
-                  if (loggedUser == null && !showLogin)
+                    )
+                  else
                     Column(
                       children: [
                         CupertinoTextField(
@@ -690,17 +668,6 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
                         ),
                       ],
                     ),
-                  if (loggedUser != null)
-                    Column(
-                      children: [
-                        Text('Logado como ${loggedUser!.username}'),
-                        const SizedBox(height: 20),
-                        CupertinoButton.filled(
-                          child: const Text('Logout'),
-                          onPressed: logout,
-                        ),
-                      ],
-                    ),
                 ],
               ),
             ),
@@ -714,25 +681,6 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         middle: const Text('Carrinho'),
-        leading: _currentIndex != 0
-            ? CupertinoButton(
-                padding: EdgeInsets.zero,
-                child: const Icon(CupertinoIcons.back),
-                onPressed: () {
-                  _tabController.animateTo(0);
-                  setState(() {
-                    _currentIndex = 0;
-                  });
-                },
-              )
-            : null,
-        trailing: cart.isNotEmpty && loggedUser != null
-            ? CupertinoButton(
-                padding: EdgeInsets.zero,
-                child: const Text('Checkout'),
-                onPressed: checkout,
-              )
-            : null,
       ),
       child: SafeArea(
         child: Column(
@@ -849,6 +797,10 @@ class _ItaHelpHomeState extends State<ItaHelpHome>
                 ],
               ),
             ),
+            CupertinoButton.filled(
+              child: const Text('Checkout'),
+              onPressed: checkout,
+            ),
           ],
         ),
       ),
@@ -938,8 +890,7 @@ class _ProductCardState extends State<ProductCard> {
                       onPressed: () {
                         showCupertinoModalPopup(
                           context: context,
-                          builder: (BuildContext context) =>
-                              CupertinoActionSheet(
+                          builder: (BuildContext context) => CupertinoActionSheet(
                             title: const Text('Selecione a cor'),
                             actions: widget.product.colors
                                 .map<Widget>(
@@ -974,8 +925,7 @@ class _ProductCardState extends State<ProductCard> {
                       onPressed: () {
                         showCupertinoModalPopup(
                           context: context,
-                          builder: (BuildContext context) =>
-                              CupertinoActionSheet(
+                          builder: (BuildContext context) => CupertinoActionSheet(
                             title: const Text('Selecione o armazenamento'),
                             actions: widget.product.availableStorage
                                 .map<Widget>(
