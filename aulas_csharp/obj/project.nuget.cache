@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MKAE4u9Sndk=",
+  "dgSpecHash": "inMYFj3Nfoc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Projects\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Documents\\TCC\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",

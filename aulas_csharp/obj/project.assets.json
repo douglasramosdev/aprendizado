@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Projects\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\TCC\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
       "projectName": "aulas_csharp",
-      "projectPath": "C:\\Users\\Usuario\\Projects\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\TCC\\aprendizado\\aulas_csharp\\aulas_csharp.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Projects\\aprendizado\\aulas_csharp\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\TCC\\aprendizado\\aulas_csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
